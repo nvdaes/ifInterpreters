@@ -27,4 +27,6 @@ To configure Magnetic to work best with NVDA, bring up the 'Options' dialog with
 
 If you wish to play a Z-Code game with Windows Frotz, you must first launch Windows Frotz, then select the game you want to play from the file open dialog that appears.  If you try to play a game by opening a game file in Windows Explorer, the resulting instance of Windows Frotz will not be readable with NVDA.
 
-If you find that NVDA is mixing old output lines from the interpreter with new lines, try adjusting the stabilize delay using Windows+NVDA+Left Arrow and Windows+NVDA+right Arrow.  If the interpreter is Windows Frotz, you should also insure the Fast Scrolling check box is checked in the Windows Frotz preferences dialog.  You can bring up the dialog with Control+P from within the program.
+If you find that NVDA is mixing old output lines from the interpreter with new lines, try adjusting the stabilize delay using Windows+NVDA+Left Arrow and Windows+NVDA+right Arrow. These gestures can be modified from NVDA Input gestures dialog, ifInterpreters category.
+
+If the interpreter is Windows Frotz, you should also insure the Fast Scrolling check box is checked in the Windows Frotz preferences dialog.  You can bring up the dialog with Control+P from within the program.

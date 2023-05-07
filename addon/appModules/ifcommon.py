@@ -24,7 +24,7 @@ import config
 from configobj import ConfigObj
 from logHandler import log
 from NVDAObjects.window import DisplayModelLiveText
-from speech import speakText
+import ui
 import queueHandler
 import textInfos
 try:
@@ -205,6 +205,7 @@ class GameDisplayModelLiveText(DisplayModelLiveText):
 
 
 class GameAppModule(appModuleHandler.AppModule):
+	scriptCategory = "ifInterpreters"
 	def script_decrease_delay(self,gesture):
 		global ADDON_CONFIG
 		delay = Decimal(str(ADDON_CONFIG["general"]["delay"]))
@@ -212,7 +213,8 @@ class GameAppModule(appModuleHandler.AppModule):
 			delay = ADDON_CONFIG["general"]["delay"] = 0.0
 		else:
 			delay = ADDON_CONFIG["general"]["delay"] = float(delay - Decimal(str(0.1)))
-		speakText("%s stabilize delay set." % ("No" if delay==0.0 else str(delay) + " seconds"))
+			# Translator: Message reporting the telay to stabilize text.
+		ui.message(_("Stabilize delay: %s.") % str(delay))
 	script_decrease_delay.__doc__=_("Decrease the Stabilize Delay for the game output.")
 
 	def script_increase_delay(self,gesture):
@@ -222,7 +224,8 @@ class GameAppModule(appModuleHandler.AppModule):
 			delay = ADDON_CONFIG["general"]["delay"] = 1.0
 		else:
 			delay = ADDON_CONFIG["general"]["delay"] = float(delay + Decimal(str(0.1)))
-		speakText("%s stabilize delay set." % ("1 second" if delay == 1.0 else str(delay) + " seconds"))
+		# Translator: Message reporting the telay to stabilize text.
+		ui.message(_("Stabilize delay: %s.") % str(delay))
 	script_increase_delay.__doc__=_("Increase the Stabilize Delay for the game output.")
 
 	__gestures = {
