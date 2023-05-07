@@ -213,8 +213,9 @@ class GameAppModule(appModuleHandler.AppModule):
 			delay = ADDON_CONFIG["general"]["delay"] = 0.0
 		else:
 			delay = ADDON_CONFIG["general"]["delay"] = float(delay - Decimal(str(0.1)))
-			# Translator: Message reporting the telay to stabilize text.
+		# Translators: Message reporting the delay to stabilize text.
 		ui.message(_("Stabilize delay: %s.") % str(delay))
+	# Translators: Message presented in input help mode.
 	script_decrease_delay.__doc__=_("Decrease the Stabilize Delay for the game output.")
 
 	def script_increase_delay(self,gesture):
@@ -224,8 +225,9 @@ class GameAppModule(appModuleHandler.AppModule):
 			delay = ADDON_CONFIG["general"]["delay"] = 1.0
 		else:
 			delay = ADDON_CONFIG["general"]["delay"] = float(delay + Decimal(str(0.1)))
-		# Translator: Message reporting the telay to stabilize text.
+		# Translators: Message reporting the delay to stabilize text.
 		ui.message(_("Stabilize delay: %s.") % str(delay))
+	# Translators: Message presented in input help mode.
 	script_increase_delay.__doc__=_("Increase the Stabilize Delay for the game output.")
 
 	__gestures = {
