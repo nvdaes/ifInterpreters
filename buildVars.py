@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Enables automatic speech output for interactive fiction interpreters."""),
 	# version
-	"addon_version": "1.5.0",
+	"addon_version": "1.6.0",
 	# Author(s)
 	"addon_author":
 	"Nick Stockton <nstockton@gmail.com>, Noelia Ruiz Martínez <nrm1977@gmail.com>",
