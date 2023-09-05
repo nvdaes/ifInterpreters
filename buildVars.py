@@ -23,7 +23,8 @@ addon_info = {
 	"addon_summary": _("IF Interpreters"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""Enables automatic speech output for interactive fiction interpreters."""),
+	"addon_description": _("""Enables automatic speech output for interactive fiction interpreters.
+	Noelia (nvdaes), publisher of this add-on, has tested it with WinGlulxe, and not with other interpreters."""),
 	# version
 	"addon_version": "1.6.0",
 	# Author(s)
