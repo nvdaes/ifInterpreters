@@ -26,7 +26,7 @@ addon_info = {
 	"addon_description": _("""Enables automatic speech output for interactive fiction interpreters.
 	Noelia (nvdaes), publisher of this add-on, has tested it with WinGlulxe, and not with other interpreters."""),
 	# version
-	"addon_version": "2.1.0",
+	"addon_version": "3.0.0",
 	# Author(s)
 	"addon_author":
 	"Nick Stockton <nstockton@gmail.com>, Noelia Ruiz Martínez <nrm1977@gmail.com>",
